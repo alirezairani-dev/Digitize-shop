@@ -1,0 +1,14 @@
+/* woff 2 formats */
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-width: normal;
+  src: url("../fonts/iran-yekan-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/iran-yekan-bold.woff2') format('woff2');	 
+}
