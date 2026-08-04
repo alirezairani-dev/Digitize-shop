@@ -6,5 +6,67 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>خانه</title>
   </head>
-  <body></body>
+  <body>
+    <!-- =============== HEADER =============== -->
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__navbar navbar">
+          <ul class="navbar__menu menu">
+            <!-- LOGO -->
+            <li class="menu__item">
+              <a href="#">
+                <picture class="logo">
+                  <source
+                    srcset="assets/images/logo/digitize-mobile-logo.svg"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="assets/images/logo/digitize-desktop-logo.svg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="assets/images/logo/digitize-desktop-logo.svg"
+                    alt="Digitize"
+                  />
+                </picture>
+              </a>
+            </li>
+            <!-- LINKS -->
+            <li class="menu__item">
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="menu__link link" href="#">خانه</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="menu__link link" href="#">موبایل</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="menu__link link" href="#">لپ تاپ</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="menu__link link" href="#">ساعت هوشمند</a>
+                </li>
+              </ul>
+            </li>
+            <!-- SEARCH FORM -->
+            <li class="menu__item">
+              <form class="menu__search-form">
+                <img
+                  class="menu__search-icon"
+                  src="assets/images/icons/search-normal.svg"
+                  alt="search"
+                />
+                <input
+                  class="menu__search-input"
+                  type="search"
+                  name="search field"
+                  placeholder="جستجوی نام محصول، نام برند، نام مدل و ..."
+                />
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>

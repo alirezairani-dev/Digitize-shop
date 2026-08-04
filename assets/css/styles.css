@@ -2,9 +2,5 @@
 @import url("reset.css");
 @import url("fonts.css");
 
-/*===============  BREAKPOINTS ===============*/
-/* For small devices */
-
-/* For medium devices */
-
-/* For large devices */  
+/* LAYOUT */
+@import url("layout/header.css");

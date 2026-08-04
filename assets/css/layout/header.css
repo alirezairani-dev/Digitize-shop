@@ -1,0 +1,141 @@
+/* Navbar */
+.header__navbar {
+  padding-block: 34px;
+}
+
+/* MENU */
+.navbar__menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__menu .logo {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.menu__search-icon {
+  width: 24px;
+}
+
+.menu__search-input,
+.submenu{
+  display: none;
+}
+
+/* SEARCH */
+.menu__search-form {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: var(--shadow-100);
+  cursor: pointer;
+}
+
+/*===============  BREAKPOINTS ===============*/
+/* For small devices */
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .menu__search-form {
+    cursor: default;
+  }
+
+  .navbar__menu .logo{
+    width: 100px;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .header{
+    background-color: var(--color-stone-50);
+  }
+
+  /* MENU */
+  .submenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 2.5rem;
+    font-size: var(--small-font-size);
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  .menu__link {
+    transition: color ease-in-out 0.2s;
+  }
+
+  .submenu__item:hover .menu__link {
+    color: var(--color-orange-700);
+  }
+
+  .navbar__menu .logo{
+    width: 110px;
+  }
+
+  .navbar__menu {
+    grid-template-columns: auto auto 1fr;
+    gap: 0 2rem;
+  }
+
+  /* SEARCH */
+  .menu__search-form {
+    width: 100%;
+    height: 49px;
+    background-color: var(--color-gray-200);
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 20px; 
+    justify-content: flex-start;
+    gap: 0 15px;
+  }
+
+  .menu__search-input{
+    display: inline-block;
+    font-size: var(--smaller-font-size);
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    color: var(--color-text);
+  }
+
+  .menu__search-icon{
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* MENU */
+  .submenu{
+    font-size: var(--small-font-size);
+    gap: 0 4.5rem;
+    margin-left: 50px;
+  }
+
+  .navbar__menu .logo{
+    width: 150px !important;
+  }
+
+  /* SEARCH */
+  .menu__search-form{
+    height: 52px;
+  }
+
+  .menu__search-input{
+    font-size: var(--small-font-size);
+  }
+
+  .menu__search-input::placeholder{
+    font-size: var(--smaller-font-size);
+    letter-spacing: 1px;
+  }
+}
