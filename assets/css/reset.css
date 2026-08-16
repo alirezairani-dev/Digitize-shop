@@ -36,8 +36,14 @@
   --smaller-font-size: 1.4rem;
 
   /*========== Font weight ==========*/
+  --font-extra-black: 900;
+  --font-black: 850;
+  --font-extra-bold: 800;
   --font-bold: 700;
+  --font-medium: 500;
   --font-regular: 400;
+  --font-light: 300;
+  --font-thin: 100;
 
   --container-padding: 1rem;
 
