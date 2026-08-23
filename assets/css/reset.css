@@ -131,6 +131,21 @@ button {
   color: inherit;
 }
 
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  padding: 12px;
+  border-radius: 4px;
+  color: inherit;
+}
+
+.btn .icon {
+  display: flex;
+  align-items: center;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 /*=============== LAYOUT ===============*/

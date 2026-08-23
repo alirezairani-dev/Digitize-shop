@@ -1,0 +1,23 @@
+/* MOBILE FILTER */
+.filter__mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* For small devices */
+@media screen and (max-width: 424px) {
+  .filter__mobile {
+    flex-wrap: wrap;
+  }
+}
+
+/* For medium devices */
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+  .filter__mobile{
+    display: none;
+  }
+}
