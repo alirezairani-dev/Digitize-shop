@@ -6,6 +6,10 @@
   gap: 10px;
 }
 
+.filter__desktop {
+  display: none;
+}
+
 /* For small devices */
 @media screen and (max-width: 424px) {
   .filter__mobile {
@@ -16,8 +20,50 @@
 /* For medium devices */
 
 /* For large devices */
-@media screen and (min-width: 1024px){
-  .filter__mobile{
+@media screen and (min-width: 1024px) {
+  .filter__mobile {
     display: none;
+  }
+
+  /* DESKTOP FILTER */
+  .filter__desktop {
+    display: block;
+  }
+
+  .filter__sort {
+    background-color: var(--color-stone-50);
+    border-radius: 5px;
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .filter-sort__icon {
+    background-color: var(--color-orange-100);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .filter-sort__menu {
+    display: flex;
+    align-items: center;
+    gap: 0 18px;
+  }
+
+  .filter-sort__item {
+    font-size: var(--smaller-font-size);
+    color: var(--color-gray-300);
+    cursor: pointer;
+  }
+
+  .filter-sort__item.active {
+    color: var(--color-text) !important;
   }
 }
