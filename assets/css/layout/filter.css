@@ -27,7 +27,9 @@
 
   /* DESKTOP FILTER */
   .filter__desktop {
-    display: block;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 0 15px;
   }
 
   .filter__sort {
@@ -37,6 +39,8 @@
     gap: 0 20px;
     align-items: center;
     padding: 5px;
+    order: 1;
+    height: max-content;
   }
 
   .filter-sort__icon {
@@ -65,5 +69,55 @@
 
   .filter-sort__item.active {
     color: var(--color-text) !important;
+  }
+
+  .filter__sidebar-options {
+    background-color: var(--color-stone-50);
+    padding: 30px; 
+    border-radius: 12px;
+  }
+
+  .filter__sidebar-title {
+    font-size: var(--small-font-size);
+    color: var(--color-orange-400);
+  }
+
+  .filter__sidebar-group {
+    padding: 21px 3px 15px;
+  }
+
+  .filter__sidebar-item {
+    font-size: var(--smaller-font-size);
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: color ease-in 0.2s;
+    cursor: pointer;
+  }
+
+  .filter__sidebar-item::before {
+    content: "";
+    background-color: var(--color-gray-300);
+    opacity: 0.4;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    border-radius: 100%;
+    top: -4px;
+    right: -5px;
+  }
+
+  .filter__sidebar-item:hover {
+    color: var(--color-orange-400);
+  }
+
+  .filter-sidebar-icon {
+    z-index: 10;
+  }
+
+  .filter__sidebar-banner{
+    margin-top: 15px;
   }
 }
