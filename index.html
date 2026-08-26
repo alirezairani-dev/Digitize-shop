@@ -69,101 +69,103 @@
       </div>
     </header>
     <main id="main">
-      <div class="container">
-        <div class="filter">
-          <div class="filter__mobile">
-            <button class="filter__mobile-button btn">
-              <span class="filter__icon icon">
-                <img src="assets/images/icons/sort.svg" alt="" />
-                <img src="assets/images/icons/arrow-down.svg" alt="" />
+      <!-- =============== FILTER SIDEBAR =============== -->
+      <aside class="filter-sidebar">
+        <div class="filter-sidebar__options">
+          <h3 class="filter-sidebar__title">دسته بندی</h3>
+          <ul class="filter-sidebar__group">
+            <li class="filter-sidebar__item">
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/mobile.svg" alt="" />
               </span>
-              محبوب ترین محصول
-            </button>
-            <button class="filter__mobile-button btn">
-              <span class="filter__icon icon">
-                <img src="assets/images/icons/filter.svg" alt="" />
+              تلفن همراه
+            </li>
+            <li class="filter-sidebar__item">
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/monitor.svg" alt="" />
               </span>
-              فیلتر: برند محصول
-            </button>
-          </div>
-          <div class="filter__desktop">
-            <div class="filter__sort">
-              <span class="filter-sort__icon icon">
-                <img src="assets/images/icons/sort.svg" alt="" />
-                <img src="assets/images/icons/arrow-down.svg" alt="" />
+              لپ تاپ
+            </li>
+            <li class="filter-sidebar__item">
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/watch.svg" alt="" />
               </span>
-              <ul class="filter-sort__menu">
-                <li class="filter-sort__item">محبوب ترین</li>
-                <li class="filter-sort__item">پربازدید ترین</li>
-                <li class="filter-sort__item">گران ترین</li>
-                <li class="filter-sort__item">ارزان ترین</li>
-              </ul>
-            </div>
-            <aside class="filter__sidebar">
-              <div class="filter__sidebar-options">
-                <h3 class="filter__sidebar-title">دسته بندی</h3>
-                <ul class="filter__sidebar-group">
-                  <li class="filter__sidebar-item active">
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/mobile.svg" alt="" />
-                    </span>
-                    تلفن همراه
-                  </li>
-                  <li class="filter__sidebar-item">
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/monitor.svg" alt="" />
-                    </span>
-                    لپ تاپ
-                  </li>
-                  <li class="filter__sidebar-item">
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/watch.svg" alt="" />
-                    </span>
-                    ساعت هوشمند
-                  </li>
-                </ul>
+              ساعت هوشمند
+            </li>
+          </ul>
 
-                <h3 class="filter__sidebar-title">فیلتر</h3>
-                <ul class="filter__sidebar-group">
-                  <li class="filter__sidebar-item">
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/house.svg" alt="" />
-                    </span>
-                    برند محصول
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/arrow.svg" alt="" />
-                    </span>
-                  </li>
-                  <li class="filter__sidebar-item">
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/color-swatch.svg" alt="" />
-                    </span>
-                    رنگ محصول
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/arrow.svg" alt="" />
-                    </span>
-                  </li>
-                  <li class="filter__sidebar-item">
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/empty-wallet.svg" alt="" />
-                    </span>
-                    محدوده قیمت
-                    <span class="filter__sidebar-icon">
-                      <img src="assets/images/icons/arrow.svg" alt="" />
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div class="filter__sidebar-banner">
-                <img
-                  src="assets/images/banners/smart-watch-ads-banner.webp"
-                  alt="Smart watch"
-                />
-              </div>
-            </aside>
+          <h3 class="filter__sidebar-title">فیلتر</h3>
+          <ul class="filter__sidebar-group">
+            <li class="filter-sidebar__item">
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/house.svg" alt="" />
+              </span>
+              برند محصول
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/arrow.svg" alt="" />
+              </span>
+            </li>
+            <li class="filter-sidebar__item">
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/color-swatch.svg" alt="" />
+              </span>
+              رنگ محصول
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/arrow.svg" alt="" />
+              </span>
+            </li>
+            <li class="filter-sidebar__item">
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/empty-wallet.svg" alt="" />
+              </span>
+              محدوده قیمت
+              <span class="filter-sidebar__icon">
+                <img src="assets/images/icons/arrow.svg" alt="" />
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-sidebar__banner">
+          <img
+            src="assets/images/banners/smart-watch-ads-banner.webp"
+            alt="Smart watch"
+          />
+        </div>
+      </aside>
+      <!-- =============== FILTER =============== -->
+      <div class="filter">
+        <div class="filter__mobile">
+          <button class="filter__mobile-button btn">
+            <span class="filter__icon icon">
+              <img src="assets/images/icons/sort.svg" alt="" />
+              <img src="assets/images/icons/arrow-down.svg" alt="" />
+            </span>
+            محبوب ترین محصول
+          </button>
+          <button class="filter__mobile-button btn">
+            <span class="filter__icon icon">
+              <img src="assets/images/icons/filter.svg" alt="" />
+            </span>
+            فیلتر: برند محصول
+          </button>
+        </div>
+        <div class="filter__desktop">
+          <div class="filter__sort">
+            <span class="filter-sort__icon icon">
+              <img src="assets/images/icons/sort.svg" alt="" />
+              <img src="assets/images/icons/arrow-down.svg" alt="" />
+            </span>
+            <ul class="filter-sort__menu">
+              <li class="filter-sort__item">محبوب ترین</li>
+              <li class="filter-sort__item">پربازدید ترین</li>
+              <li class="filter-sort__item">گران ترین</li>
+              <li class="filter-sort__item">ارزان ترین</li>
+            </ul>
           </div>
         </div>
       </div>
+      <!-- =============== PRODUCTS =============== -->
+      <section class="products">Products</section>
     </main>
   </body>
 </html>

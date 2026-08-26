@@ -27,9 +27,7 @@
 
   /* DESKTOP FILTER */
   .filter__desktop {
-    display: grid;
-    grid-template-columns: 230px 1fr;
-    gap: 0 15px;
+    display: block;
   }
 
   .filter__sort {
@@ -71,22 +69,26 @@
     color: var(--color-text) !important;
   }
 
-  .filter__sidebar-options {
+  .filter-sidebar{
+    grid-row: span 2;
+  }
+
+  .filter-sidebar__options {
     background-color: var(--color-stone-50);
     padding: 30px; 
     border-radius: 12px;
   }
 
-  .filter__sidebar-title {
+  .filter-sidebar__title {
     font-size: var(--small-font-size);
     color: var(--color-orange-400);
   }
 
-  .filter__sidebar-group {
+  .filter-sidebar__group {
     padding: 21px 3px 15px;
   }
 
-  .filter__sidebar-item {
+  .filter-sidebar__item {
     font-size: var(--smaller-font-size);
     display: flex;
     align-items: center;
@@ -97,7 +99,7 @@
     cursor: pointer;
   }
 
-  .filter__sidebar-item::before {
+  .filter-sidebar__item::before {
     content: "";
     background-color: var(--color-gray-300);
     opacity: 0.4;
@@ -109,15 +111,15 @@
     right: -5px;
   }
 
-  .filter__sidebar-item:hover {
+  .filter-sidebar__item:hover {
     color: var(--color-orange-400);
   }
 
-  .filter-sidebar-icon {
+  .filter-sidebar__icon {
     z-index: 10;
   }
 
-  .filter__sidebar-banner{
+  .filter-sidebar__banner{
     margin-top: 15px;
   }
 }
