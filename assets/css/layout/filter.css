@@ -6,9 +6,11 @@
   gap: 10px;
 }
 
-.filter__desktop {
+.filter__desktop,
+.filter-sidebar {
   display: none;
 }
+
 
 /* For small devices */
 @media screen and (max-width: 424px) {
@@ -26,7 +28,8 @@
   }
 
   /* DESKTOP FILTER */
-  .filter__desktop {
+  .filter__desktop,
+  .filter-sidebar{
     display: block;
   }
 
