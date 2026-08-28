@@ -1,0 +1,124 @@
+.products{
+  margin-top: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 10px;
+}
+
+.card {
+  width: 220px;
+  height: max-content;
+  background-color: var(--color-stone-50);
+  border-radius: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.card__head{
+  background-color: var(--color-slate-200);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 144px;
+}
+
+.card__favorite{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--color-gray-300);
+  width: 27px;
+  height: 27px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__icon{
+  width: 17px;
+  height: auto;
+}
+
+.card__body{
+  font-size: var(--smaller-font-size);
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.card__group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__category-name{
+  color: var(--color-slate-200);
+}
+
+.card__color{
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 100%;
+  margin-right: -6px;
+  border: 1px solid #fff;
+}
+
+.card__color--purple{
+  background-color: var(--color-purple-500);
+}
+.card__color--yellow{
+  background-color: var(--color-yellow-500);
+}
+.card__color--orange{
+  background-color: var(--color-orange-500);
+}
+.card__color--blue{
+  background-color: var(--color-slate-900);
+}
+
+.card__price{
+  color: var(--color-orange-700);
+  font-weight: var(--font-bold);
+}
+
+.card__footer{
+  border-top: 1px solid var(--color-stone-100);
+  text-align: center;
+}
+
+.card__action{
+  padding: 8px;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-bold);
+  color: var(--color-orange-400);
+  background-color: transparent;
+}
+
+/* For medium devices */
+@media screen and (min-width: 425px){
+  .card{
+    width: 193px;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+  .products{
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .card{
+    width: 218px;
+  }
+}
+
+
