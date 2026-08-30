@@ -109,6 +109,12 @@
     color: var(--color-text);
   }
 
+  .menu__search-input::placeholder{
+    font-size: var(--smaller-font-size);
+    color: var(--color-gray-300);
+    letter-spacing: 1px;
+  }
+
   .menu__search-icon{
     vertical-align: middle;
   }
@@ -135,8 +141,4 @@
     font-size: var(--small-font-size);
   }
 
-  .menu__search-input::placeholder{
-    font-size: var(--smaller-font-size);
-    letter-spacing: 1px;
-  }
 }

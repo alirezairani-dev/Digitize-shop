@@ -66,6 +66,11 @@
     font-size: var(--smaller-font-size);
     color: var(--color-gray-300);
     cursor: pointer;
+    transition: color ease-in 0.2s;
+  }
+
+  .filter-sort__item:hover{
+    color: var(--color-orange-400);
   }
 
   .filter-sort__item.active {
