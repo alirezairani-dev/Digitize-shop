@@ -1,0 +1,60 @@
+.footer {
+  margin-top: 40px;
+  background-color: var(--color-stone-50);
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+  row-gap: 15px;
+}
+
+.about__logo .logo {
+  width: 120px;
+  height: auto;
+}
+.about__description {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+.about__description span {
+  font-weight: var(--font-bold);
+  color: var(--color-orange-400);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.list__title {
+  font-size: var(--small-font-size);
+}
+
+.footer__about {
+  max-width: 576px;
+}
+
+.address__phone-number {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin: 10px 0 6px;
+}
+
+/* For medium devices */
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 25px;
+  }
+
+  .footer__links {
+    margin-top: 25px;
+  }
+}
